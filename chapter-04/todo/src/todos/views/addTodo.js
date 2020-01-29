@@ -13,8 +13,8 @@ class AddTodo extends Component {
   }
 
   onSubmit(ev) {
-    ev.preventDefault();
-
+    ev.preventDefault();//通过 调用 参数 ev 的 preventDefault 函数 取消 掉 浏览器 的 默认 提交 行为。
+    
     const input = this.input;
     if (!input.value.trim()) {
       return;
